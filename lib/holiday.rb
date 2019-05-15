@@ -48,7 +48,7 @@ def all_holidays_with_bbq(holiday_hash)
       supply.include?("BBQ")
         
     end
-  end
+  end.flatten
 end
 
 all_holidays_with_bbq(holiday_hash)
