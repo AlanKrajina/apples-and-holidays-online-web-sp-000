@@ -21,21 +21,6 @@ def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash[:summer][:fourth_of_july][1]
 end
 
-holiday_hash =   {
-     :winter => {
-       :christmas => ["Lights", "Wreath"],
-       :new_years => ["Party Hats"]
-     },
-     :summer => {
-       :fourth_of_july => ["Fireworks", "BBQ"]
-     },
-     :fall => {
-       :thanksgiving => ["Turkey"]
-     },
-     :spring => {
-       :memorial_day => ["BBQ"]
-     }
-   }
 
 
 def all_holidays_with_bbq(holiday_hash)
@@ -51,7 +36,7 @@ def all_holidays_with_bbq(holiday_hash)
   end.flatten.compact
 end
 
-all_holidays_with_bbq(holiday_hash)
+
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
@@ -80,6 +65,7 @@ end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
+  
   new_supplies = []
   holiday_hash.each do |season, days|
     if season == :winter
@@ -103,7 +89,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
       holiday_hash[season][holiday_name] = supply_array
     end
   end
-return holiday_hash
+  return holiday_hash
 end
 
 
