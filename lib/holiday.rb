@@ -47,7 +47,8 @@ def all_holidays_with_bbq(holiday_hash)
       
       if supply == "BBQ"
         
-        new_array << day
+       # new_array << day
+       puts day
 end
 end
 end
